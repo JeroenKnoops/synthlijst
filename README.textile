@@ -16,6 +16,10 @@ h2. Installation
 * Rails 2.3.2.1
 * Cucumber 0.3.2
 * Nifty_generators 0.2.4
+* ci_reporter 1.6.0
+* webrat 0.4.3
+* rspec 1.2.2
+* rspec-rails 1.2.2
 
 h2. Credits
 
