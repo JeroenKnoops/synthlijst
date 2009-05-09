@@ -1,0 +1,24 @@
+h1. synthlijst.nl
+
+Dit is de source code achter "synthlijst.nl":http://www.synthlijst.nl
+Gebruikers zullen hun eigen verzameling met synthesizers kunnen behouden en beheren.
+Deze synth zal deel uit maken van "synthforum.nl":http://www.synthforum.nl en "synthwiki.nl":http://www.synthwiki.nl
+
+h3. Huidige functies:
+
+* Geen
+
+h3. TODO:
+* Alles
+
+h2. Installation
+
+* Rails 2.3.2.1
+* Cucumber 0.3.2
+* Nifty_generators 0.2.4
+
+h2. Credits
+
+* **Jeroen Knoops** - Developer
+* **Mattijs Jansen** - Ideeen
+
