@@ -20,5 +20,5 @@ h2. Installation
 h2. Credits
 
 * **Jeroen Knoops** - Developer
-* **Mattijs Jansen** - Ideeen
+* **Matthijs Jansen** - Ideeen
 
