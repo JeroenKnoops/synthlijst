@@ -9,7 +9,9 @@ module NavigationHelpers
     case page_name
     
     when /the homepage/
-      '/'
+      root_path
+    when /the list of synthesizers/
+      synthesizers_path
     
     # Add more mappings here.
     # Here is a more fancy example:
