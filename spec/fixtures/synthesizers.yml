@@ -1,9 +1,9 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  title: MyString
-  description: MyText
+teebee:
+  title: TB-303
+  description: Roland TB-303
 
-two:
-  title: MyString
-  description: MyText
+TeeRee:
+  title: TR-909
+  description: Roland TR-909 Beat machine

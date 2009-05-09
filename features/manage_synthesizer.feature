@@ -8,4 +8,3 @@ Feature: Manage Synthesizer
     When I go to the list of synthesizers
     Then I should see "TB-303"
     And I should see "TR-909"
-    
