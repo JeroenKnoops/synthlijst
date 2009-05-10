@@ -1,0 +1,11 @@
+<% form_for @synthesizer do |f| -%>
+  <p>
+    <%= f.label :title, "Titel" %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :description, "Beschrijving" %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p class="button"><%= f.submit "Aanmaken" %></p>
+<% end -%>
