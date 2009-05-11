@@ -20,3 +20,10 @@ Feature: Manage Synthesizer
     And I should see "Doepfer A-100"
     And I should see "Een lowbudget modulair systeem"
     And I should have 1 synthesizer
+    
+  Scenario: Show details Synthesizer
+    Given I have synthesizers titled Yamaha CS-30
+    And I am on the list of synthesizers
+    When I follow "Yamaha CS-30"
+    Then I should see "Synthesizer Details"
+    And I should see "Yamaha CS-30"

@@ -7,7 +7,6 @@ describe SynthesizersController do
     controller.should be_an_instance_of(SynthesizersController)
   end
 
-
   describe "GET 'index'" do
     it "should be successful" do
       get 'index'

@@ -13,4 +13,8 @@ class SynthesizersController < ApplicationController
     flash[:notice] = "Nieuwe synthesizer aangemaakt"
     redirect_to synthesizers_path
   end
+  
+  def show
+    @synthesizer = Synthesizer.find(params[:id])
+  end
 end
