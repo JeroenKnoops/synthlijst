@@ -11,4 +11,8 @@ describe Synthesizer do
   it "should create a new instance given valid attributes" do
     Synthesizer.create!(@valid_attributes)
   end
+  
+  it "should not create a new instance since title is not given" do
+    Synthesizer.create(:description => "a nameless synthesizer").save.should be_false
+  end
 end
