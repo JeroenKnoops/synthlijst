@@ -23,9 +23,16 @@ describe SynthesizersController do
 
   describe "POST 'create'" do
     it "should be successful" do
-      synthesizer = {:title => "TB-303", :description => "TeeBee 303 Acid machine"}
-      post 'create', :synthesizer => synthesizer
+      Synthesizer.any_instance.stubs(:valid?).returns(true)
+      post 'create'
+      flash[:notice].should_not be_nil
       response.should redirect_to(synthesizers_path)
+    end
+    it "should not be successful" do
+      Synthesizer.any_instance.stubs(:valid?).returns(false)
+      post 'create'
+      flash[:notice].should be_nil
+      response.should render_template('new')
     end
   end
 

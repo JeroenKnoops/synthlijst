@@ -9,9 +9,13 @@ class SynthesizersController < ApplicationController
   end
   
   def create
-    @synthesizer = Synthesizer.create!(params[:synthesizer])
-    flash[:notice] = "Nieuwe synthesizer aangemaakt"
-    redirect_to synthesizers_path
+    @synthesizer = Synthesizer.new(params[:synthesizer])
+    if @synthesizer.save
+      flash[:notice] = "Nieuwe synthesizer aangemaakt"
+      redirect_to synthesizers_path
+    else
+      render :action => :new
+    end
   end
   
   def show
