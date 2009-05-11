@@ -22,12 +22,12 @@ class UsersController < ApplicationController
   end
   
   def edit
-    @user = User.find(params[:user]) if current_user.admin?
+    @user = User.find(params[:id]) if current_user.admin?
     @user ||= current_user
   end
   
   def update
-    @user = User.find(params[:user]) if current_user.admin?
+    @user = User.find(params[:id]) if current_user.admin?
     @user ||= current_user
     if @user.update_attributes(params[:user])
       flash[:notice] = "Successfully updated user."
