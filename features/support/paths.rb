@@ -10,7 +10,7 @@ module NavigationHelpers
     
     when /the homepage/
       root_path
-    when /the list of synthesizers/
+    when /the list of synthesizers?/
       synthesizers_path
     
     # Add more mappings here.
