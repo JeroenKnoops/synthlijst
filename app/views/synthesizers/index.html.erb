@@ -1,8 +1,12 @@
 <p>
   <%= flash[:notice] %>
 </p>
+<table>
 <% for synthesizer in @synthesizers %>
-  <p><%= link_to synthesizer.title, synthesizer_path(synthesizer.id) %></p>
-  <p><%=h synthesizer.description %></p>
+  <tr>
+    <td><%= link_to synthesizer.title, synthesizer_path(synthesizer.id) %></td>
+    <td><%=h synthesizer.description %></td>
+  </tr>
 <% end %>
+</table>
 <p><%= link_to "Nieuwe Synthesizer", new_synthesizer_path %></p>
