@@ -13,4 +13,20 @@ describe SynthesizersController do
       response.should be_success
     end
   end
+
+  describe "GET 'new'" do
+    it "should be successful" do
+      get 'new'
+      response.should be_success
+    end
+  end
+
+  describe "POST 'create'" do
+    it "should be successful" do
+      synthesizer = {:title => "TB-303", :description => "TeeBee 303 Acid machine"}
+      post 'create', :synthesizer => synthesizer
+      response.should redirect_to(synthesizers_path)
+    end
+  end
+
 end
