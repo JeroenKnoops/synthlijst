@@ -3,6 +3,14 @@ class UsersController < ApplicationController
     @user = User.new
   end
   
+  def index
+    @users = User.all
+  end
+  
+  def show
+    @user = User.find(params[:id])
+  end
+  
   def create
     @user = User.new(params[:user])
     if @user.save
@@ -14,11 +22,13 @@ class UsersController < ApplicationController
   end
   
   def edit
-    @user = current_user
+    @user = User.find(params[:user]) if current_user.admin?
+    @user ||= current_user
   end
   
   def update
-    @user = current_user
+    @user = User.find(params[:user]) if current_user.admin?
+    @user ||= current_user
     if @user.update_attributes(params[:user])
       flash[:notice] = "Successfully updated user."
       redirect_to root_url

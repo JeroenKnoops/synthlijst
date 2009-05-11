@@ -1,0 +1,8 @@
+<% title "Gebruikers profiel" %>
+<p>
+  Gebruikersnaam: <%= h @user.username %><br />
+  Email: <%= h @user.email %>
+</p>
+<p>
+  <%= link_to "Profiel aanpassen", edit_user_path(@user) %>
+</p>

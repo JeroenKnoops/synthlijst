@@ -12,6 +12,8 @@ module NavigationHelpers
       root_path
     when /the list of synthesizers?/
       synthesizers_path
+    when /the list of users?/
+      users_path
     
     # Add more mappings here.
     # Here is a more fancy example:

@@ -1,0 +1,9 @@
+<% title "Gebruikers" %>
+<table>
+<% for user in @users %>
+  <tr>
+    <td><%= link_to user.username, user_path(user) %></td>
+    <td><%=h user.email %></td>
+  </tr>
+<% end %>
+</table>

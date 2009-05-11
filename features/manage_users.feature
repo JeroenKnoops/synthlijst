@@ -10,5 +10,7 @@ Feature: Manage Users
       | Jeroen   | secret   | false |
       | admin    | secret   | true  |
     And I am logged in as "admin" with password "secret"
+    And I am on the list of users
+    When I follow "Jeroen"
     When I visit profile for "Jeroen"
     Then I should see "Profiel aanpassen"
