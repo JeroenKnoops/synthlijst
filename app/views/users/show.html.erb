@@ -4,7 +4,7 @@
   Email: <%= h @user.email %>
 </p>
 
-<% if current_user && current_user.admin %>
+<% if current_user && current_user.admin? || current_user == @user %>
 <p>
   <%= link_to "Profiel aanpassen", edit_user_path(@user) %>
 </p>
