@@ -10,7 +10,7 @@
     <div id="container">
       <div id="user_nav">
         <% if current_user %>
-          <%= link_to "Profile aanpassen", edit_user_path(:current) %> |
+          <%= link_to "Eigen profile aanpassen", edit_user_path(:current) %> |
           <%= link_to "Uitloggen", logout_path %>
         <% else %>
           <%= link_to "Registreer", new_user_path %> |

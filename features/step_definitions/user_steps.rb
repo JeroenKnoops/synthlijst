@@ -5,10 +5,12 @@ Given /^the following (.+) records?$/ do |factory,table|
 end
 
 Given /^I am logged in as "([^\"]*)" with password "([^\"]*)"$/ do |username, password|
-  visit login_url
-  fill_in "Gebruikersnaam", :with => username
-  fill_in "Paswoord", :with => password
-  click_button "Log in"
+  unless username.blank?
+    visit login_url
+    fill_in "Gebruikersnaam", :with => username
+    fill_in "Paswoord", :with => password
+    click_button "Log in"
+  end
 end
 
 When /^I visit profile for "([^\"]*)"$/ do |username|
