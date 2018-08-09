@@ -4,6 +4,8 @@ Dit is de source code achter "synthlijst.nl":http://www.synthlijst.nl
 Gebruikers zullen hun eigen verzameling met synthesizers kunnen behouden en beheren.
 Deze synth zal deel uit maken van "synthforum.nl":http://www.synthforum.nl en "synthwiki.nl":http://www.synthwiki.nl
 
+h2. Dit project is dood.
+
 h3. Huidige functies:
 
 * Geen
